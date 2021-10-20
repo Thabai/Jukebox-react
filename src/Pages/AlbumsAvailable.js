@@ -23,6 +23,8 @@ const AlbumsAvailable = () => {
     }
   };
 
+  console.log(album);
+
   useEffect(() => {
     handleFetch();
   }, []);

@@ -9,7 +9,7 @@ const DefaultPlaylist = () => {
   const handleFetch = async () => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_REST_API}api/defplaylist`
+        `${process.env.REACT_APP_REST_API}api/playlist`
       );
       if (response.status !== 200) {
         throw new error("oops");
@@ -37,7 +37,7 @@ const DefaultPlaylist = () => {
       {defaultP.length === 0 && <div>Loading Please Wait</div>}
       {defaultP.length > 0 ? defaultP.map((data, index) => {
         return (
-          <div className="album_container" key={index}>
+          <div className="song_container" key={index}>
             <h2>{data.songTrack}</h2>
             <h2>{data.songArtist}</h2>
           </div>

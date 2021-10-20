@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link to="/Albums">Albums</Link>
         </li>
         <li className="navbarDefault">
-          <Link to="/defaultPlaylist">Dafault Playlist</Link>
+          <Link to="/defaultPlaylist">Default Playlist</Link>
         </li>
         <li className="navbarCreate">
           <Link to="/createPlaylist">Create A Playlist</Link>

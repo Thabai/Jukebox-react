@@ -8,17 +8,17 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar__links">
-        <li className="navbarHome">
-          <Link to="/">Home</Link>
+        <li>
+          <Link to="/"  className="navbarHome">Home</Link>
         </li>
-        <li className="navbarAlbums">
-          <Link to="/Albums">Albums</Link>
+        <li >
+          <Link to="/Albums" className="navbarAlbums">Albums</Link>
         </li>
-        <li className="navbarDefault">
-          <Link to="/defaultPlaylist">Default Playlist</Link>
+        <li >
+          <Link to="/defaultPlaylist" className="navbarDefault">Default Playlist</Link>
         </li>
-        <li className="navbarCreate">
-          <Link to="/createPlaylist">Create A Playlist</Link>
+        <li >
+          <Link to="/createPlaylist" className="navbarCreate">Create A Playlist</Link>
         </li>
       </ul>
     </nav>
